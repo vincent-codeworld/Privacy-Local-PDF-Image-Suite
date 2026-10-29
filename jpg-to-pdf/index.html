@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Convert JPG or PNG images to PDF in your browser. Private and unlimited." />
+    <meta name="robots" content="index,follow" />
+    <title>JPG to PDF online (no upload) | LocalPDF</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="/"><img src="/favicon.svg" alt="" width="28" height="28" /> LocalPDF</a>
+        <nav class="nav-links" aria-label="Tools">
+          <a href="/">Home</a>
+          <a href="/merge-pdf/">Merge</a>
+          <a href="/split-pdf/">Split</a>
+          <a href="/compress-pdf/">Compress</a>
+          <a href="/jpg-to-pdf/" class="active">JPG→PDF</a>
+          <a href="/pdf-to-jpg/">PDF→JPG</a>
+          <a href="/privacy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JPG to PDF</h1>
+        <p>Convert JPG or PNG images to PDF in your browser. Private and unlimited.</p>
+        <div class="badges">
+          <span class="badge">No signup</span>
+          <span class="badge">Files stay on device</span>
+          <span class="badge">Unlimited · no watermark</span>
+        </div>
+      </section>
+      
+      <section class="panel">
+        <div id="dropzone" class="dropzone">
+          <strong>Drop files here or tap to choose</strong>
+          <span>Processing happens in your browser. Nothing is uploaded.</span>
+        </div>
+        <ul id="file-list" class="file-list"></ul>
+        
+        <div class="actions">
+          <button id="run" type="button" disabled>Run</button>
+          <button id="clear" type="button" class="secondary">Clear</button>
+        </div>
+        <div id="status" class="status" aria-live="polite"></div>
+      </section>
+
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>LocalPDF — browser-local PDF &amp; image tools.</span>
+        <span><a href="/privacy/">How we keep files private</a></span>
+      </div>
+    </footer>
+    <script type="module" src="/src/tools/jpg-to-pdf.ts"></script>
+  </body>
+</html>
