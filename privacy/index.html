@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How LocalPDF keeps your files on your device with no upload and no signup." />
+    <meta name="robots" content="index,follow" />
+    <title>Privacy | LocalPDF</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="/"><img src="/favicon.svg" alt="" width="28" height="28" /> LocalPDF</a>
+        <nav class="nav-links" aria-label="Tools">
+          <a href="/">Home</a>
+          <a href="/merge-pdf/">Merge</a>
+          <a href="/split-pdf/">Split</a>
+          <a href="/compress-pdf/">Compress</a>
+          <a href="/jpg-to-pdf/">JPG→PDF</a>
+          <a href="/pdf-to-jpg/">PDF→JPG</a>
+          <a href="/privacy/" class="active">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Privacy</h1>
+        <p>How LocalPDF keeps your files on your device with no upload and no signup.</p>
+        <div class="badges">
+          <span class="badge">No signup</span>
+          <span class="badge">Files stay on device</span>
+          <span class="badge">Unlimited · no watermark</span>
+        </div>
+      </section>
+      
+      <section class="panel">
+        <h2 style="margin-top:0">Privacy promise</h2>
+        <p>LocalPDF tools run entirely in your browser using client-side JavaScript and WebAssembly. When you select a file, it is read with the browser File API and processed in memory on your device.</p>
+        <ul>
+          <li><strong>No file uploads:</strong> tool pages do not POST your documents to our servers.</li>
+          <li><strong>No account:</strong> we do not ask for email or passwords to use the tools.</li>
+          <li><strong>Verify yourself:</strong> open browser DevTools → Network, run a conversion, and confirm there is no request carrying your file bytes.</li>
+          <li><strong>Downloads:</strong> results are saved with a local blob download link.</li>
+        </ul>
+        <p>This site may be hosted on Cloudflare. Serving the static app is not the same as receiving your documents. Static assets (HTML/CSS/JS) load over HTTPS; your PDF/image contents are not part of those requests after the page loads.</p>
+        <p>If we later add optional server features (for example OCR), they will be clearly labeled and opt-in, with a separate privacy note.</p>
+        <p class="hint">Working name product. Brand/domain may change.</p>
+      </section>
+
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>LocalPDF — browser-local PDF &amp; image tools.</span>
+        <span><a href="/privacy/">How we keep files private</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
